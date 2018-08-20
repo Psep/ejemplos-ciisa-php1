@@ -23,43 +23,34 @@
       	</nav>
     </div>
 
-		<div class="container">
-			<div id="frmLogin" class="row">
-				<div class="card-deck mb-3 text-center center">
-					<div class="card mb-4 box-shadow">
-						<div class="card-header">
-							<h4 class="my-0 font-weight-normal">Ingreso de Clientes</h4>
-						</div>
-						<div class="card-body">
-							<fieldset>
-								<div class="form-group">
-									<div class="input-group mb-2">
-										<div class="input-group-prepend">
-											<div class="input-group-text">@</div>
-										</div>
-										<input id="frm_user" name="frm_user" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username" required>
-									</div>
-								</div>
-								<div class="form-group">
-									<input id="frm_passwd" name="frm_passwd" class="form-control" placeholder="Password" name="password" value="" type="password" required>
-								</div>
-								<button id="btn_login" class="btn btn-lg btn-success btn-block">Entrar</button>
-							</fieldset>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h1 class="display-4">Contacto</h1>
+		</div>
 
-			<div id="frmCarrito" class="rendered">
-				<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-					<h1 class="display-4">Carrito de Compras</h1>
+		<div class="container">
+
+			<div class="row">
+				<div class="col">
+					<div id="map"></div>
 				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col col-lg-2">
-							<button id="btn_logout" class="btn btn-lg btn-secondary btn-block">Salir</button>
-						</div>
-					</div>
+				<div class="col">
+					<div class="form-group">
+    				<label for="nombre">Nombre</label>
+    				<input type="text" class="form-control" id="nombre" placeholder="Pepito Los Palotes">
+  				</div>
+					<div class="form-group">
+    				<label for="correo">Teléfono</label>
+    				<input type="tel" class="form-control" id="fono" placeholder="988765431">
+  				</div>
+					<div class="form-group">
+    				<label for="correo">Correo</label>
+    				<input type="email" class="form-control" id="correo" placeholder="ejemplo@ciisa.cl">
+  				</div>
+				  <div class="form-group">
+				    <label for="comentarios">Comentarios</label>
+				    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+				  </div>
+					<button type="button" class="btn btn-success">Enviar</button>
 				</div>
 			</div>
 
@@ -86,8 +77,17 @@
 						</ul>
 					</div>
 				</div>
-				<script src="js/dist/md5.pack.js"></script>
-				<script src="js/app.js"></script>
+				<script>
+					function initMap() {
+						var ciisa = {lat: -33.44839965, lng: -70.6681571};
+						var map = new google.maps.Map(
+								document.getElementById('map'), {zoom: 18, center: ciisa});
+						var marker = new google.maps.Marker({position: ciisa, map: map});
+					}
+				</script>
+				<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2QJ8NTZa-ZtgFT7WhAiSbVWpSna9ozhY&callback=initMap">
+				</script>
 			</footer>
 		</div>
 	</body>

@@ -28,6 +28,10 @@ img {
 	max-width: 100%;
 }
 
+.img-thumbnail{
+  height: 200px;
+}
+
 .center{
   display: block;
   margin-left: auto;
@@ -36,4 +40,19 @@ img {
 
 .rendered{
   display: none;
+}
+
+.carousel-inner {
+  max-height: 350px;
+}
+
+.carousel-img{
+  max-height: 350px;
+  background-color: rgba(0,0,0,0.5);
+  filter:brightness(0.5);
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }

@@ -18,8 +18,8 @@
     	<h5 class="my-0 mr-md-auto font-weight-normal"><a href="index.html" title="CIISA HOT LTDA" ><img src="img/pizza.png" alt="CIISA HOT LTDA" height="40"> CIISA HOT LTDA</a></h5>
       	<nav class="my-2 my-md-0 mr-md-3">
         	<a class="p-2 text-dark" href="index.html">Inicio</a>
-        	<a class="p-2 text-dark" href="#">Nuestros Platos</a>
-        	<a class="p-2 text-dark" href="#">Contacto</a>
+        	<a class="p-2 text-dark" href="nuestrosplatos.html">Nuestros Platos</a>
+        	<a class="p-2 text-dark" href="contacto.html">Contacto</a>
       	</nav>
     </div>
 
@@ -28,67 +28,21 @@
 		</div>
 
 		<div class="container">
-			<div class="card-deck mb-3 text-center">
-				<div class="card mb-4 box-shadow">
-					<div class="card-header">
-						<h4 class="my-0 font-weight-normal">Pizzas sin gluten</h4>
-					</div>
-					<div class="card-body">
-						<img src="img/pizza-sin-gluten.jpg">
-					</div>
-					<div class="card-footer">
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#compraSinModal">
-							Comprar
-						</button>
-					</div>
-					<!-- Modal de pizza sin gluten -->
-					<div class="modal fade" id="compraSinModal" tabindex="-1" role="dialog" aria-labelledby="compraSinModalLabel" aria-hidden="true">
-  					<div class="modal-dialog" role="document">
-    					<div class="modal-content">
-      					<div class="modal-header">
-					        <h5 class="modal-title" id="compraSinModalLabel">Confirmar Compra</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Cancelar">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        ¿Está seguro que desea comprar?
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-					        <button id="btn_ComprarGluten" type="button" class="btn btn-primary">Aceptar</button>
-					      </div>
-    					</div>
-  					</div>
-					</div>
-				</div>
-				<div class="card mb-4 box-shadow">
-					<div class="card-header">
-						<h4 class="my-0 font-weight-normal">Pizzas veganas</h4>
-					</div>
-					<div class="card-body">
-						<img src="img/pizza-vegana.jpg">
-					</div>
-					<div class="card-footer">
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#compraSinModal">
-							Comprar
-						</button>
-					</div>
-				</div>
-				<div class="card mb-4 box-shadow">
-					<div class="card-header">
-						<h4 class="my-0 font-weight-normal">Pizzas tradicionales</h4>
-					</div>
-					<div class="card-body">
-						<img src="img/pizza-normal.jpg">
-					</div>
-					<div class="card-footer">
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#compraSinModal">
-							Comprar
-						</button>
-					</div>
+			<div class="bd-example">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  	<ol id="categorias-indicadores" class="carousel-indicators"></ol>
+			  	<div id="categorias" class="carousel-inner"></div>
+			  	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+			  	</a>
+			  	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+			  	</a>
 				</div>
 			</div>
+
 			<footer class="pt-4 my-md-5 pt-md-5 border-top">
 				<div class="row">
 					<div class="col-12 col-md-6">
@@ -98,7 +52,7 @@
 					<div class="col-12 col-md-4">
 						<h5>¡Contáctanos!</h5>
 						<ul class="list-unstyled text-small">
-							<li><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Santiago de Chile</li>
+							<li><i class="fas fa-map-marker-alt"></i> República 20, Santiago de Chile</li>
 							<li><i class="fas fa-mobile-alt"></i> <i class="fab fa-whatsapp"></i> <a class="text-muted" href="tel:+56999999999">+569 9999 9999</a></li>
 							<li><i class="fas fa-envelope"></i> <a class="text-muted" href="mailto:pizza@ciisa.cl">pizza@ciisa.cl</a></li>
 						</ul>
@@ -107,8 +61,8 @@
 						<h5>Menú</h5>
 						<ul class="list-unstyled text-small">
 							<li><a class="text-muted" href="index.html">Inicio</a></li>
-							<li><a class="text-muted" href="#">Nuestros Platos</a></li>
-							<li><a class="text-muted" href="#">Contacto</a></li>
+							<li><a class="text-muted" href="nuestrosplatos.html">Nuestros Platos</a></li>
+							<li><a class="text-muted" href="contacto.html">Contacto</a></li>
 						</ul>
 					</div>
 				</div>

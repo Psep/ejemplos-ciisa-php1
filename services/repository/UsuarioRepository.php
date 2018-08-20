@@ -6,7 +6,7 @@ class UsuarioRepository extends PDOConnection {
 
   public static function find(Usuario $usuario){
     $conn = self::getConnection();
-    $stmt = $conn->prepare("SELECT id, username, password, email FROM Usuario WHERE username = :username AND password = :password");
+    $stmt = $conn->prepare("SELECT * FROM Usuario WHERE username = :username AND password = :password");
     $stmt->bindParam(':username', $usuario->username);
     $stmt->bindParam(':password', $usuario->password);
     $stmt->execute();

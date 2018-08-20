@@ -23,46 +23,33 @@
       	</nav>
     </div>
 
+		<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h1 class="display-4">Nuestros Platos</h1>
+		</div>
+
 		<div class="container">
-			<div id="frmLogin" class="row">
-				<div class="card-deck mb-3 text-center center">
-					<div class="card mb-4 box-shadow">
-						<div class="card-header">
-							<h4 class="my-0 font-weight-normal">Ingreso de Clientes</h4>
+			<div id="platos" class="card-deck mb-3 text-center"></div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="compraSinModal" tabindex="-1" role="dialog" aria-labelledby="compraSinModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="compraSinModalLabel">Confirmar Compra</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Cancelar">
+								<span aria-hidden="true">&times;</span>
+							</button>
 						</div>
-						<div class="card-body">
-							<fieldset>
-								<div class="form-group">
-									<div class="input-group mb-2">
-										<div class="input-group-prepend">
-											<div class="input-group-text">@</div>
-										</div>
-										<input id="frm_user" name="frm_user" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username" required>
-									</div>
-								</div>
-								<div class="form-group">
-									<input id="frm_passwd" name="frm_passwd" class="form-control" placeholder="Password" name="password" value="" type="password" required>
-								</div>
-								<button id="btn_login" class="btn btn-lg btn-success btn-block">Entrar</button>
-							</fieldset>
+						<div class="modal-body">
+							¿Está seguro que desea comprar?
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+							<button id="btn_ComprarGluten" type="button" class="btn btn-primary">Aceptar</button>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<div id="frmCarrito" class="rendered">
-				<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-					<h1 class="display-4">Carrito de Compras</h1>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col col-lg-2">
-							<button id="btn_logout" class="btn btn-lg btn-secondary btn-block">Salir</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
 			<footer class="pt-4 my-md-5 pt-md-5 border-top">
 				<div class="row">
 					<div class="col-12 col-md-6">
@@ -86,8 +73,8 @@
 						</ul>
 					</div>
 				</div>
-				<script src="js/dist/md5.pack.js"></script>
-				<script src="js/app.js"></script>
+				<script src="js/platos.js"></script>
+				<script src="js/comprar.js"></script>
 			</footer>
 		</div>
 	</body>

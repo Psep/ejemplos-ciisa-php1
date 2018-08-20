@@ -10,9 +10,6 @@ function loadCarrito() {
 
 var token = sessionStorage.getItem("token");
 
-//TODO revisar
-console.log(token);
-
 if (token != null && token != "null") {
   loadCarrito();
 } else {
